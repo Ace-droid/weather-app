@@ -3,27 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sign up form</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+/>
+    <script src="https://kit.fontawesome.com/3900767157.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
   <script defer src="main.js"></script></head>
   <body>
-   <header>
-      <h1>Weather <span>App</span></h1>
-      <form>
-            <input
-            type="text"
-            name="search-input"
-            id="search-input"
-            class="search-input"
-            required
-            placeholder="search for new city"=
-            />
-         <button type="button" class="search-btn">search</button>
-      </form>
-      <button type="button" class="unit-btn">unit</button>
-   </header>
-
-   <div class="container">
-
+    <div class="section remove-display">
+      <div class="loader">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+      </div>
+    </div>
+   <div class="wrapper">
+     <header>
+        <h1 class="logo">Weather <span>App</span></h1>
+        <form>
+              <input
+              type="text"
+              name="search-input"
+              id="search-input"
+              class="search-input"
+              required
+              placeholder="search for new city"
+              />
+           <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button type="button" class="unit-btn cel"><span class="unit">Unit</span> <span class="unit-2">C°</span></button>
+     </header>
+     <div class="container">
+     </div>
    </div>
   </body>
 </html>
